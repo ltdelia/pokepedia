@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Pokepedia
+
+An application developed to utilize React, React Router, and the Pokemon API.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
