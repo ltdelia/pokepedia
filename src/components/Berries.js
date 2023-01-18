@@ -25,7 +25,7 @@ export default function Berries() {
   }, [berryId]);
 
   return (
-    <main>
+    <div>
       <p>Click button below to generate berry.</p>
       <button onClick={(e) => handleClick(e)}>Generate Random Berry</button>
       {berry && (
@@ -33,6 +33,6 @@ export default function Berries() {
           <h2>{berry.name}</h2>         
         </div>
       )}
-    </main>
+    </div>
   );
 }

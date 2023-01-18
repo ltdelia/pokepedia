@@ -46,7 +46,7 @@ export default function Pokemon() {
   }, [pokemonId]);
 
   return (
-    <main>
+    <div>
       <p>Click button below to generate pokemon.</p>
       <button onClick={(e) => handleClick(e)}>Generate Random Pokemon</button>
       {pokemon && (
@@ -81,6 +81,6 @@ export default function Pokemon() {
           )}
         </div>
       )}
-    </main>
+    </div>
   );
 }

@@ -1,18 +1,22 @@
 import React from "react";
 
 import Header from '../components/ui/Header';
+import Home from '../components/Home';
 import About from '../components/About';
 import Berries from '../components/Berries';
 import Pokemon from '../components/Pokemon';
 
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import './App.css';
 function App() {
   return (
     <Router>
       <Header />
-      <main>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route path="/about">
           <About />
         </Route>
@@ -22,7 +26,7 @@ function App() {
         <Route path="/pokemon">
           <Pokemon />
         </Route>
-      </main>
+      </Switch>
     </Router>
   );
 }
